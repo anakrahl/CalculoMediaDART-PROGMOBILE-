@@ -19,7 +19,7 @@ List<Map> filtrarAlunosAprovados(List<Map> listaAlunos, double mediaAlunos) {
   return listaAlunos.where((aluno) => aluno['notaAluno'] >= mediaAlunos).toList(); //listar todos os alunos onde nota seja maior que a média total
 }
 
-// função para imprimir os resultados
+//função para imprimir os resultados
 void imprimirResultadosTotal(
     double mediaAlunos, List<Map> filtrarAlunosAprovados) {  //lista os alunos acima da média a partir do filtro
   print('\nMédia das notas: $mediaAlunos\n');
